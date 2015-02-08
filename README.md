@@ -41,4 +41,4 @@ Not the best, but hey.
 
 ## Credits
 
-The initial idea is from [Gnuffo1](http://stackoverflow.com/a/28050338/794641). I replaced array concatenation with `array_replace_recursive` to allow nested configuration, fix the said error, and set the repo up.
+The initial idea is from [Gnuffo1](http://stackoverflow.com/a/28050338/794641). I replaced array concatenation with `array_replace_recursive` to allow nested configuration, fixed the said error, and set the repo up.
