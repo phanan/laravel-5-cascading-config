@@ -1,3 +1,5 @@
+> **IMPORTANT**: I've moved on to create a [package](https://github.com/phanan/cascading-config) to support cascading configuration in Laravel 5. This repo is only here for historical purpose, and will not be updated or monitored.
+
 # laravel-5-cascading-config
 
 The cascading configuration system in Laravel 4 has been removed in L5 in favor of [PHP dotenv](https://github.com/vlucas/phpdotenv), the PHP version of the original Ruby [dotenv](https://github.com/bkeepers/dotenv). This simple gist is to re-enable it (and the whole shining flexibility).
