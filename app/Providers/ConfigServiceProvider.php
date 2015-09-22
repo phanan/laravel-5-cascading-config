@@ -2,6 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 use Symfony\Component\Finder\Finder;
+use Illuminate\Foundation\AliasLoader;
 
 class ConfigServiceProvider extends ServiceProvider {
 
@@ -34,6 +35,13 @@ class ConfigServiceProvider extends ServiceProvider {
 
             // Replace any matching values in the old config with the new ones.
             $config->set($key_name, array_replace_recursive($old_values, $new_values));
+
+        }
+
+        // Load new aliases
+        $loader = AliasLoader::getInstance();
+        foreach($config->get('app.aliases') as $alias => $class) {
+            $loader->alias($alias, $class);
         }
     }
 
